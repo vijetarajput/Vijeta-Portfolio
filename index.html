@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijeta | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://kit.fontawesome.com/653f12c83b.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.15.0/core.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="" class="logo" /> -->
+                <h1>Vijeta</h1>
+                <ul id="menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfoio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    </li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I am <span id="Portfolio-Name">Vijeta </span><br>Singh from London</h1>
+
+            </div>
+            <a href="#about" class="more">Learn more...</a>
+        </div>
+    </div>
+    <!-- ------------------------------------------about------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/Vijeta.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="justify">
+                        As a front-end developer, I'm driven by a passion for creating captivating and user-centric web
+                        experiences. With a
+                        background in banking, I made the exciting transition to web development to explore my creative
+                        side and pursue my love
+                        for technology. My journey into the world of coding has been fueled by a desire to craft
+                        visually appealing and
+                        interactive web applications that leave a lasting impression.</p><br>
+                    <p>
+                        What sets me apart is my strong communication skills and my ability to understand both the
+                        technical aspects of
+                        development and the needs of clients. Having worked in client-facing roles in the banking
+                        sector, I bring a unique blend
+                        of financial acumen and customer-centric mindset to my projects. I'm a quick learner, a team
+                        player, and I'm always
+                        eager to collaborate with others to create remarkable digital solutions.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web2</span></li>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>React/Redux</li>
+                            <li>Bootstrap</li><br>
+                            <li><span>Web3</span></li>
+                            <li>Solidity</li>
+                            <li>DApp Development for blockchain</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Current</span><br>
+                                Frontend and React Developer - WeService.uk
+                            </li>
+                            <li><span>Jan, 2024 - Feb, 2024</span><br>
+                                Frontend Developer Intern - MonkeLabs, London
+                            </li>
+                            <li>
+                                <span>2019 - 2022</span><br>
+                                Frontend Developer - CodeClinic, India
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Bachelors of Computer Application, India</li>
+                            <li>Masters of Computer Application, India</li>
+                            <li>MSc in Blockchain and Financial Technologies, London</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#services" id="more-btn" class="more">Services <i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+    <!-- ..................................................Services-------------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Web Development</h2>
+                    <p class="justify">Building and maintaining websites using HTML, CSS, and JavaScript.
+                        Integrating front-end components with back-end services. Building SPAs (Single Page
+                        Applications)
+                        using JavaScript frameworks
+                        like React.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Responsive Web Design</h2>
+                    <p class="justify">Creating websites that look and function well on all devices, including desktops,
+                        tablets,
+                        and
+                        mobile phones.
+                        Ensuring websites are accessible and user-friendly with a focus on usability.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Performance Optimization and API Integration</h2>
+                    <p class="justify">Optimizing websites for speed and performance.
+                        Implementing techniques to reduce load times, such as code splitting, lazy loading, and
+                        image
+                        optimization. Integrating third-party APIs to add dynamic functionality to websites.
+                        Working with RESTful and GraphQL APIs to fetch and display data.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#portfolio" id="more-btn" class="more">Portfolio <i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+
+    <!-- ------------------------------------------------------portfolio--------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/AI-Poem_Generator.png" />
+                    <div class="layer">
+                        <h3>AI Poem Generator</h3>
+                        <p>
+                            An innovative web application that uses advanced natural language
+                            processing and machine learning
+                            algorithms to generate beautifully crafted poems from user prompts. Built with HTML/CSS,
+                            Ajax, and JavaScript extensions
+                            and plugins.
+                        </p>
+                        <a href="https://ai-poem-generator-by-vijeta.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Weather.png" />
+                    <div class="layer">
+                        <h3>Weather Forecast Project</h3>
+                        <p>
+                            A dynamic web application built using React.js, Bootstrap, HTML/CSS, and the
+                            OpenWeatherAPI.
+                            This project features
+                            real-time weather data integration, offering a sleek and responsive design that enhances
+                            user experience with accurate,
+                            up-to-date weather information.
+                        </p>
+                        <a href="https://finalweathersearchengine.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Dictionary.png" />
+                    <div class="layer">
+                        <h3>Dictionary App</h3>
+                        <p>
+                            A user-friendly dictionary app built with React and powered by the DictionaryAPI. This
+                            handy
+                            tool allows users to
+                            effortlessly search for word definitions, synonyms, and more, all in one place.
+                        </p>
+                        <a href="https://dictionary-app-by-vijeta.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-list-2">
+                <div class="work">
+                    <img src="./images/World_Clock.png" target="_blank" />
+                    <div class="layer">
+                        <h3>World Clock</h3>
+                        <p>
+                            A dynamic World Clock built with HTML for structure, CSS for styling, and powered by
+                            Moment.js for seamless time zone
+                            management. This project features a user-friendly interface and provides real-time
+                            updates,
+                            offering a practical and
+                            visually appealing solution to explore different time zones.
+                        </p>
+                        <a href="https://worldclockprojectbyvijeta.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Varanasi.png" />
+                    <div class="layer">
+                        <h3>Travel Destination Project</h3>
+                        <p>
+                            A visually stunning travel destination website designed for seamless viewing on any
+                            device.
+                            With captivating layouts,
+                            user-friendly navigation, and optimized performance, it's the perfect gateway to explore
+                            exotic destinations from the
+                            comfort of your screen.
+                        </p>
+                        <a href="https://travel-destination-varanasi-india.netlify.app/#more" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#portfolio" class="Btn" id="showMoreBtn">See more...</a>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------Contact--------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>vijetasinghrajput@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+44 7562927529</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vijetasingh-r-66676218b/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/vijetarajput" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <a href="./images/CV_VIJETASINGH RAJPUT.docx" download class="Btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" id="name" placeholder="your name" required>
+                        <input type="email" name="email" id="email" placeholder="your email" required>
+                        <textarea name="message" id="message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="Btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="header-btn" class="more">Top <i class="fa-solid fa-chevron-up"></i></a>
+        <div class="copyright">
+            <p>Copyright ©2024 Vijeta Singh.</p>
+        </div>
+    </div>
+    <script>
+        function openTab(tabName) {
+            var tabLinks = document.querySelectorAll(".tab-links");
+            var tabContents = document.querySelectorAll(".tab-contents");
+
+            tabLinks.forEach((link) => {
+                link.classList.remove("active-link")
+            })
+
+            tabContents.forEach((content) => {
+                content.classList.remove("active-tab")
+            })
+            document.querySelector(`.tab-links[onclick="openTab('${tabName}')"]`).classList.add("active-link");
+            document.querySelector(`#${tabName}`).classList.add("active-tab");
+        }
+        var menuList = document.querySelector("#menu-list");
+        function openMenu() {
+            menuList.style.right = "0";
+        }
+        function closeMenu() {
+            menuList.style.right = "-380px";
+        }
+        closeMenu();
+
+        document.getElementById("showMoreBtn").addEventListener("click", function () {
+            const workList2 = document.querySelector(".work-list-2");
+            workList2.classList.toggle("show-more");
+            if (workList2.classList.contains("show-more")) {
+                showMoreBtn.innerHTML = "Show less...";
+            } else {
+                showMoreBtn.innerHTML = "Show more...";
+            }
+        });
+        const textToType = document.querySelector("#Portfolio-Name");
+
+        function displayName(text) {
+            new Typewriter(textToType, {
+                strings: [text],
+                autoStart: true,
+                cursor: "",
+                delay: 1,
+                loop: true
+            });
+        }
+        displayName("Vijeta");
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwkVSfhVFeq4yXTQTGzzoIjc9apegjmS4J1ebXpm-PwSXTx0xk_Qyr6v7IXvcEHuBiE/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.querySelector("#msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully !"
+                    setTimeout(() => {
+                        msg.innerHTML = "";
+                    }, 3000)
+                })
+                .catch(error => console.error('Error!', error.message))
+            const Name = document.querySelector("name").value = "";
+        })
+    </script>
+</body>
+
+</html>
